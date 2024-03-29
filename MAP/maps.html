@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mapstyle.css">
+<!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DotGothic16&family=Monoton&family=VT323&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+  </style>
+
+  <!--3D-->
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>.logo{position:absolute;bottom:16px;right:16px;width:32px;height:32px;z-index:2;background-image:url(https://app.spline.design/_assets/_icons/icon_favicon32x32.png);background-size:cover;}.logo:hover{opacity:0.8;}</style>
+  <!--3D-->
+<!--Fonts-->
+</head>
+<body style="background-color: black;">
+
+
+    <nav style="background-color: rgb(0, 0, 0);">
+        <a href="/index.html" style="color: aliceblue;">Phoenix Innovations</a>
+        <a href="/about/about.html" style="color: aliceblue;">About</a>
+        <a href="/WEBSITE/website.html" style="color: aliceblue;">Services</a>
+        <a href="/Contact/ContactForm.html"  style="float: right;background-color: aliceblue;">Contact</a>
+      </nav>
+      <ul style="display:flex;list-style-type: none;">
+        <a href="/WEBSITE/website.html" style="padding: 2%;text-decoration: none;color: rgb(255, 255, 255);"><li style="padding: 4%;">Website</li></a>  
+        <a href="/NFC/NFC.html" style="padding: 2%;text-decoration: none;color: rgb(255, 239, 239);"><li style="padding: 4%;">NFC</li></a> 
+        <a href="maps.html" style="padding: 2%;text-decoration: none;color: rgb(238, 238, 238);"><li style="padding: 4%;">Maps</li></a>   
+        <a href="/ig_post_creator/smma.html" style="padding: 2%;text-decoration: none;color: rgb(255, 255, 255);"><li style="padding: 4%;">Social Media Management</li></a>  
+        <a href="/services.html" style="padding: 2%;text-decoration: none;color: rgb(248, 248, 248);"><li style="padding: 4%;">Other Services</li></a>  
+        </ul>
+      <div style="height: 50%;width: 100%;">      <canvas id="canvas3d"></canvas>
+        <script type="module">
+          import { Application } from './runtime.js';
+          const canvas = document.getElementById('canvas3d');
+          const app = new Application(canvas);
+          app.load('./map.splinecode');
+        </script></div>
+
+    <script type="module" src="./src/main.js"></script>
+    <div style="padding: 10%;background-color: rgba(139, 150, 150, 0.158);">
+        
+        <p style="color: aliceblue;text-align: center;">Phoenix Innovations is your premier destination for comprehensive Google Maps solutions, designed to revolutionize the way businesses navigate and connect with their surroundings. As a leader in the industry, we take pride in offering a complete suite of services tailored to meet the diverse needs of our clients. 
+          <p style="color: aliceblue;text-align: center;">Whether you are looking to optimize your business location, enhance navigation for your customers, or leverage the power of geospatial data, Phoenix Innovations has you covered.Our expert team leverages the full spectrum of Google Maps functionalities to provide tailored solutions that align with your business objectives. </p>
+          <p style="color: aliceblue;text-align: center;">From seamless integration of maps on your website or application to optimizing your business listings for enhanced visibility, we ensure that your brand is not only easy to find but also stands out in the digital landscape.
+          
+            At Phoenix Innovations, we understand the importance of location intelligence in today's dynamic business environment. </p>
+            <p style="color: aliceblue;text-align: center;">Our Google Maps solutions go beyond basic navigation, offering robust features such as geocoding, routing, and real-time location tracking to empower businesses with actionable insights. Whether you are a local business aiming to attract foot traffic or a global enterprise optimizing logistics, our solutions are designed to scale and adapt to your unique requirements.</p>
+          <p style="color: aliceblue;text-align: center;"> Choose Phoenix Innovations as your trusted partner for all things Google Maps, and let us pave the way for your business success through innovative and effective location-based solutions. Discover the power of precision and efficiency with Phoenix Innovations – where every map leads to your success.</p>
+          
+         
+
+     
+
+	</div>		
+    <section>
+        
+    </section>
+   </body>
+<footer style="background-color: black;" class="new_footer_area bg_color">
+  <div  style="border:1px solid black;margin-top:4%" class="new_footer_top" >
+      <div class="">
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                    
+                      <ul style="list-style-type:none" class="list-unstyled f_list">
+                          <li ><a href="/Contact/ContactForm.html">Contact</a></li>
+                          <li><a href="/about/about.html">About Us</a></li>
+                          <li><a href="services.html">Services</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+             
+          </div>
+      </div>
+      <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+      </div>
+  </div>
+
+</footer>
+</html>

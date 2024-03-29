@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DotGothic16&family=Monoton&family=VT323&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+  </style>
+<!--Fonts-->
+</head>
+<body>
+
+
+    <nav >
+        <a href="index.html">Phoenix Innovations</a>
+        <a href="about/about.html">About</a>
+        <a href="WEBSITE\website.html">Services</a>
+        <a class="contactbt" style="background-color: #000000;color: aliceblue;"  href="Contact/ContactForm.html" >Contact</a>
+      </nav>
+      
+    <div class="demo-cont">
+    <!-- slider start -->
+    <div class="fnc-slider example-slider">
+      <div class="fnc-slider__slides">
+        <!-- slide start -->
+        <div class="fnc-slide m--blend-green m--active-slide">
+          <div class="fnc-slide__inner">
+            <div class="fnc-slide__mask">
+              <div class="fnc-slide__mask-inner"></div>
+            </div>
+            <div class="fnc-slide__content">
+              <h2 class="fnc-slide__heading">
+                <div class="fnc-slide__heading-line">
+                  <span class="maintext" style="font-size: 80px;">Virtual</span>
+                </div>
+                <div class="fnc-slide__heading-line">
+                  <span>Tour</span>
+                </div>
+              </h2>
+              
+            </div>
+          </div>
+        </div>
+        <!-- slide end -->
+        <!-- slide start -->
+        <div class="fnc-slide m--blend-dark">
+          <div class="fnc-slide__inner">
+            <div class="fnc-slide__mask">
+              <div class="fnc-slide__mask-inner"></div>
+            </div>
+            <div class="fnc-slide__content">
+              <h2 class="fnc-slide__heading">
+                <div class="fnc-slide__heading-line">
+                  <span style="font-size: 80px;">Web</span>
+                </div>
+                <div class="fnc-slide__heading-line">
+                  <span style="font-size: 80px;">Development</span>
+                </div>
+              </h2>
+            
+            </div>
+          </div>
+        </div>
+        <!-- slide end -->
+        <!-- slide start -->
+        <div class="fnc-slide m--blend-red">
+          <div class="fnc-slide__inner">
+            <div class="fnc-slide__mask">
+              <div class="fnc-slide__mask-inner"></div>
+            </div>
+            <div class="fnc-slide__content">
+              <h2 class="fnc-slide__heading">
+                <div class="fnc-slide__heading-line">
+                  <span style="font-size: 80px;" >Social Media</span>
+                </div>
+                <div class="fnc-slide__heading-line">
+                  <span style="font-size: 80px;" >Marketing</span>
+                </div>
+              </h2>
+             
+            </div>
+          </div>
+        </div>
+        <!-- slide end -->
+        <!-- slide start -->
+        <div class="fnc-slide m--blend-blue">
+          <div class="fnc-slide__inner">
+            <div class="fnc-slide__mask">
+              <div class="fnc-slide__mask-inner"></div>
+            </div>
+            <div class="fnc-slide__content">
+              <h2 class="fnc-slide__heading">
+                <div class="fnc-slide__heading-line">
+                  <span>NFC</span>
+                </div>
+                <div class="fnc-slide__heading-line">
+                  <span>Card</span>
+                </div>
+              </h2>
+           
+            </div>
+          </div>
+        </div>
+        <!-- slide end -->
+      </div>
+      <nav class="fnc-nav">
+        <div class="fnc-nav__bgs">
+          <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+          <div class="fnc-nav__bg m--navbg-dark"></div>
+          <div class="fnc-nav__bg m--navbg-red"></div>
+          <div class="fnc-nav__bg m--navbg-blue"></div>
+        </div>
+        <div class="fnc-nav__controls">
+          <button class="fnc-nav__control">
+            Virtual Tour
+            <span class="fnc-nav__control-progress"></span>
+          </button>
+          <button class="fnc-nav__control">
+            Web Development
+            <span class="fnc-nav__control-progress"></span>
+          </button>
+          <button class="fnc-nav__control">
+            Social Media Marketing
+            <span class="fnc-nav__control-progress"></span>
+          </button>
+          <button class="fnc-nav__control">
+            NFC Card
+            <span class="fnc-nav__control-progress"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+</section>
+<script>
+  (function() {
+
+var $$ = function(selector, context) {
+var context = context || document;
+var elements = context.querySelectorAll(selector);
+return [].slice.call(elements);
+};
+
+function _fncSliderInit($slider, options) {
+var prefix = ".fnc-";
+
+var $slider = $slider;
+var $slidesCont = $slider.querySelector(prefix + "slider__slides");
+var $slides = $$(prefix + "slide", $slider);
+var $controls = $$(prefix + "nav__control", $slider);
+var $controlsBgs = $$(prefix + "nav__bg", $slider);
+var $progressAS = $$(prefix + "nav__control-progress", $slider);
+
+var numOfSlides = $slides.length;
+var curSlide = 1;
+var sliding = false;
+var slidingAT = +parseFloat(getComputedStyle($slidesCont)["transition-duration"]) * 1000;
+var slidingDelay = +parseFloat(getComputedStyle($slidesCont)["transition-delay"]) * 1000;
+
+var autoSlidingActive = false;
+var autoSlidingTO;
+var autoSlidingDelay = 5000; // default autosliding delay value
+var autoSlidingBlocked = false;
+
+var $activeSlide;
+var $activeControlsBg;
+var $prevControl;
+
+function setIDs() {
+  $slides.forEach(function($slide, index) {
+    $slide.classList.add("fnc-slide-" + (index + 1));
+  });
+
+  $controls.forEach(function($control, index) {
+    $control.setAttribute("data-slide", index + 1);
+    $control.classList.add("fnc-nav__control-" + (index + 1));
+  });
+
+  $controlsBgs.forEach(function($bg, index) {
+    $bg.classList.add("fnc-nav__bg-" + (index + 1));
+  });
+};
+
+setIDs();
+
+function afterSlidingHandler() {
+  $slider.querySelector(".m--previous-slide").classList.remove("m--active-slide", "m--previous-slide");
+  $slider.querySelector(".m--previous-nav-bg").classList.remove("m--active-nav-bg", "m--previous-nav-bg");
+
+  $activeSlide.classList.remove("m--before-sliding");
+  $activeControlsBg.classList.remove("m--nav-bg-before");
+  $prevControl.classList.remove("m--prev-control");
+  $prevControl.classList.add("m--reset-progress");
+  var triggerLayout = $prevControl.offsetTop;
+  $prevControl.classList.remove("m--reset-progress");
+
+  sliding = false;
+  var layoutTrigger = $slider.offsetTop;
+
+  if (autoSlidingActive && !autoSlidingBlocked) {
+    setAutoslidingTO();
+  }
+};
+
+function performSliding(slideID) {
+  if (sliding) return;
+  sliding = true;
+  window.clearTimeout(autoSlidingTO);
+  curSlide = slideID;
+
+  $prevControl = $slider.querySelector(".m--active-control");
+  $prevControl.classList.remove("m--active-control");
+  $prevControl.classList.add("m--prev-control");
+  $slider.querySelector(prefix + "nav__control-" + slideID).classList.add("m--active-control");
+
+  $activeSlide = $slider.querySelector(prefix + "slide-" + slideID);
+  $activeControlsBg = $slider.querySelector(prefix + "nav__bg-" + slideID);
+
+  $slider.querySelector(".m--active-slide").classList.add("m--previous-slide");
+  $slider.querySelector(".m--active-nav-bg").classList.add("m--previous-nav-bg");
+
+  $activeSlide.classList.add("m--before-sliding");
+  $activeControlsBg.classList.add("m--nav-bg-before");
+
+  var layoutTrigger = $activeSlide.offsetTop;
+
+  $activeSlide.classList.add("m--active-slide");
+  $activeControlsBg.classList.add("m--active-nav-bg");
+
+  setTimeout(afterSlidingHandler, slidingAT + slidingDelay);
+};
+
+
+
+function controlClickHandler() {
+  if (sliding) return;
+  if (this.classList.contains("m--active-control")) return;
+  if (options.blockASafterClick) {
+    autoSlidingBlocked = true;
+    $slider.classList.add("m--autosliding-blocked");
+  }
+
+  var slideID = +this.getAttribute("data-slide");
+
+  performSliding(slideID);
+};
+
+$controls.forEach(function($control) {
+  $control.addEventListener("click", controlClickHandler);
+});
+
+function setAutoslidingTO() {
+  window.clearTimeout(autoSlidingTO);
+  var delay = +options.autoSlidingDelay || autoSlidingDelay;
+  curSlide++;
+  if (curSlide > numOfSlides) curSlide = 1;
+
+  autoSlidingTO = setTimeout(function() {
+    performSliding(curSlide);
+  }, delay);
+};
+
+if (options.autoSliding || +options.autoSlidingDelay > 0) {
+  if (options.autoSliding === false) return;
+  
+  autoSlidingActive = true;
+  setAutoslidingTO();
+  
+  $slider.classList.add("m--with-autosliding");
+  var triggerLayout = $slider.offsetTop;
+  
+  var delay = +options.autoSlidingDelay || autoSlidingDelay;
+  delay += slidingDelay + slidingAT;
+  
+  $progressAS.forEach(function($progress) {
+    $progress.style.transition = "transform " + (delay / 1000) + "s";
+  });
+}
+
+$slider.querySelector(".fnc-nav__control:first-child").classList.add("m--active-control");
+
+};
+
+var fncSlider = function(sliderSelector, options) {
+var $sliders = $$(sliderSelector);
+
+$sliders.forEach(function($slider) {
+  _fncSliderInit($slider, options);
+});
+};
+
+window.fncSlider = fncSlider;
+}());
+
+
+fncSlider(".example-slider", {autoSlidingDelay: 4000});
+
+var $demoCont = document.querySelector(".demo-cont");
+
+
+
+document.querySelector(".js-activate-global-blending").addEventListener("click", function() {
+document.querySelector(".example-slider").classList.toggle("m--global-blending-active");
+});
+</script>
+</div>
+    <!-- slider end -->
+    <!--Marquee-->
+    <div><section class="s1" ">
+        <div class="slider"></div>
+        <div id="app"></div>
+        <section><div class="animate">
+          <div class="bg-text-container">
+            <div class="animate-text">
+              <span class="marquee">PHOENIX INNOVATIONS&nbsp;</span>
+              <span class="marquee">PHOENIX Innovations&nbsp;</span>
+            </div>
+            <div class="animate-text left">
+              <span class="marquee">INSPIRING CHANGE&nbsp;</span>
+              <span class="marquee">INSPIRING CHANGE&nbsp;</span>
+            </div>
+          </div>
+          </div>
+         
+        <script>
+            /* Set width of all animated text to match container */
+  let parent = document.querySelectorAll('.animate-text');
+  for(let i = 0; i < parent.length; i++) {
+    parent[i].style.width = parent[i].children[0].clientWidth + "px"; 
+  };
+  </script></section>
+    <!--Marquee--></div>
+    <section>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1548345680-f5475ea5df84?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service 1">
+          <div class="card-content">
+            <h2>Google Map Services</h2>
+            <p>Your business needs a digital presence for your customer to know you and your business exist.</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service 2">
+          <div class="card-content">
+            <h2>Website Design And Development</h2>
+            <p>Creating visually appealing and responsive websites for your brand, marketing, and more.</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/card/7/h/p/1-metalmatte001-business-vkardz-original-imagkgthndfbyzen.jpeg?q=20&crop=false" alt="Service 3">
+          <div class="card-content">
+            <h2>Customized NFC Card</h2>
+            <p>Your one stop solution to showcase every detail about you and your business in the most professional way . </p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://www.ncsc.gov.uk/images/social-icons.jpg" alt="Service 4">
+          <div class="card-content">
+            <h2>Social Media Marketing</h2>
+            <p>Managing and marketing your social media to reach you</p>
+          </div>
+        </div>
+      </section>
+      <section class="marquee-container">
+        <div>
+            <!-- Add your client names or information here -->
+            Bushra Impex | Bokadia Steels | JJ ENETERPRISES| BABU PRINTERS|Amber Fasteners | MH Uniforms | Hi Tech garage Equipments | RRR Cabs | X1 POWER | VP EXPORTS | JANKI SILVER | SHRI SHANTI JEWELLERS | DELUXE FASTENERS | 
+        </div>
+    </section>
+    <section class="marquee-container">
+        <div>
+            <!-- Add your client names or information here -->
+            Bushra Impex | Bokadia Steels | JJ ENETERPRISES| BABU PRINTERS|Amber Fasteners | MH Uniforms | Hi Tech garage Equipments | RRR Cabs | X1 POWER | VP EXPORTS | JANKI SILVER | SHRI SHANTI JEWELLERS | DELUXE FASTENERS | 
+        </div>
+<div style=" border: 1px solid #000000;">
+</section>
+<!-- <section style="float: left;">    <div class="horizontalcard">
+    <img src="Internship-Project-2-main\Internship-Project-2-main\someimages 2.png" alt="Image">
+    <div class="cardcontent">
+        <h2>Client Name </h2>
+        <p>Feedback</p>
+    </div>
+    </section>
+    <section style="float: right;">    <div class="horizontalcard">
+        <img src="Internship-Project-2-main\Internship-Project-2-main\someimages 2.png" alt="Image">
+        <div class="cardcontent">
+            <h2>Client Name</h2>
+            <p>Feedback</p>
+        </div>
+        </section>
+        <section style="float: right;">    <div class="horizontalcard">
+            <img src="Internship-Project-2-main\Internship-Project-2-main\someimages 2.png" alt="Image">
+            <div class="cardcontent">
+                <h2>Client Name</h2>
+                <p>Feedback</p>
+            </div>
+            </section>
+            <section style="float: left;">    <div class="horizontalcard">
+                <img src="Internship-Project-2-main\Internship-Project-2-main\someimages 2.png" alt="Image">
+                <div class="cardcontent">
+                    <h2>Client Name</h2>
+                    <p>Feedback</p>
+                </div>
+                </section>     -->
+</div>>     
+</body>
+<footer class="new_footer_area bg_color">
+  <div  style="border:1px solid black;margin-top:4%" class="new_footer_top" >
+      <div class="">
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                    
+                      <ul style="list-style-type:none" class="list-unstyled f_list">
+                          <li ><a href="Contact/ContactForm.html">Contact</a></li>
+                          <li><a href="about/about.html">About Us</a></li>
+                          <li><a href="WEBSITE/website.html">Services</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+             
+          </div>
+      </div>
+      <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+      </div>
+  </div>
+
+</footer>
+</html>
